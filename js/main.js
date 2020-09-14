@@ -11,9 +11,9 @@ function reDisplay() {
 reDisplay()
 
 function myDocInfo() {
-    let lastModified = 'This page was last modified on ' + new Date(document.lastModified)
     let docTitle = 'This document\'s title is ' + document.title
-    let docInfo = document.querySelector('#myDocument').innerText = lastModified + '\n' + docTitle
+    let lastModified = 'This page was last modified on ' + new Date(document.lastModified)
+    let docInfo = document.querySelector('#myDocument').innerText = docTitle + '\n' + lastModified
 }
 
 myDocInfo()
